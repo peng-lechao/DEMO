@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+a {
+	text-decoration: none;
+	font-size: 14px;
+	color: #FFA600;
+}
+
+.container {
+	width: 33rem;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.container .item {
+	width: 10rem;
+	height: 10rem;
+	margin: .5rem;
+	background: #FFA600;
+	background-clip: content-box;	
+	border-radius: 5px;
+}
+
+.container a {
+	display: block;
+	width: 32rem;
+	height: 3rem;
+	margin: .5rem;
+	text-align: center;
+	line-height: 3rem;
+	background: #fff;
+	border: 1px #FFA600 solid;
+	border-radius: 5px;
+}
+
+.container a:hover {
+	background: #FFA600;
+	color: #fff;
+}
+
