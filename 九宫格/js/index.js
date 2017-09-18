@@ -42,7 +42,6 @@ var modoule = (function () {
 		clearInterval(timer);
 		//初始化timer
 		timer = null;
-		alert(timer);
 		//初始化所有颜色
 		init(arr);
 	};
