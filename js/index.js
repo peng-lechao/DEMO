@@ -31,7 +31,7 @@ var modoule = (function () {
 				for(var i=0;i<newArr.length;i++) {
 					Items[newArr[i]].style.background=makeColor();
 				}
-		    },500);
+		    },800);
 	};
 
 	var stop = function () {
