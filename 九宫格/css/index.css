@@ -15,35 +15,28 @@ a {
 }
 
 .container {
-	width: 100%;
-	height: 100%;
-}
-
-.container .content {
-	width: 33rem;
-	height: 33rem;
+	width: 50%;
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.content .item {
+.container .item {
 	width: 30%;
-	height: 30%;
+	padding: 30% 0 0 0;
 	margin: calc(10% / 6);
 	background: #FFA600;
-	background-clip: content-box;	
 	border-radius: 5px;
 	transition: all 0.2s;
 }
 
 .container a {
 	display: block;
-	width: 32rem;
-	height: 3rem;
-	margin: .5rem auto;
+	width: 98%;
+	padding: 5%;
+	margin: 3% auto;
 	text-align: center;
-	line-height: 3rem;
+	vertical-align: middle;
 	background: #fff;
 	border: 1px #FFA600 solid;
 	border-radius: 5px;
@@ -54,16 +47,6 @@ a {
 	color: #fff;
 }
 
-@media only screen and (max-width: 30em) {
-	.container .content {
-		min-width: 20rem;
-		width: 28rem;	
-		height: 28rem;
-	}
-	.container a {
-		width: 28rem;
-	}
-}
 
 <<<<<<< HEAD
 =======
