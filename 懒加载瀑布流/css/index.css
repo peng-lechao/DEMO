@@ -1,0 +1,26 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-y:scroll; 
+}
+
+#container {
+	font-size: 0;
+	position: relative;
+}
+
+#container .box{
+	display: inline-block;
+	vertical-align: top;
+	padding: 5px;
+	border: 1px rgba(0,0,0,.2) solid;
+	transition: all 2s;
+}
+
+.hide {
+	opacity: 0;
+}
