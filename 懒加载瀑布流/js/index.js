@@ -73,9 +73,10 @@ class WaterFall{
 				img.src = this.imgData.data[i].src;
 				this.parent.appendChild(box);
 				box.appendChild(img);
-				box.className = "box hide";	
+				box.className = "box hide";
+				img.onload = this.imgLocation.bind(module);
 			}
-			this.imgLocation();
+			
 		}
 	}
 }
