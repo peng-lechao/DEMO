@@ -1,0 +1,89 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	
+}
+
+a {
+	text-decoration: none;
+	font-size: 16px;
+	color: black;
+}
+
+#container {
+	position: relative;
+	width: 636px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#container img {
+	width: 270px;
+	height: 129px;
+}
+
+#container .content .searchItem{
+	display: inline-block;
+	width: 536px;
+	height: 40px;
+	margin: 10px auto;
+}
+
+#container .content .searchItem input {
+	display: inline-block;
+	width: 534px;
+	height: 40px;
+	font-size: 16px;
+	padding: 9px 7px;
+	vertical-align: middle;
+	border: 0.8px #ccc solid;
+}
+
+#container .content .searchItem input:focus {
+	border-color:0.8px solid #38f;
+}
+
+#container .content > a {
+	display: inline-block;
+	text-align: center;
+	width: 102px;
+	height: 40px;
+	font-size: 16px;
+	background: #38f;
+	vertical-align: middle;
+	margin-left: -10px;
+	color: #fff;	
+	text-decoration: none;
+	line-height: 40px;
+}
+
+#container .content #area{
+	display: none;
+	position: absolute;
+	top: 182px;
+	left: 0;
+	width: 534px;
+	border: 1px #ccc solid;
+	background: #fff;
+	list-style: none;
+	text-align: left;
+}
+
+#container .content #area li {
+	background-clip: border-box;
+}
+
+#container .content #area li :hover{
+	background: #f8f8f8;
+}
+
+#container .content #area li a {
+	display: block;
+	height: 25px;
+	line-height: 25px;
+	padding: 0 5px;
+}
