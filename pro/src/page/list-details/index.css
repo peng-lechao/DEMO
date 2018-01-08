@@ -1,0 +1,220 @@
+.preview {
+	background-color: #fff;
+	padding: 10px 2px;
+}
+
+.img-preview {
+	position: relative;
+}
+
+.img-preview .img-wrap {
+	width: 370px;
+	height: 370px;
+	/*padding: 15px;*/
+	border: 1px solid #eee;
+}
+
+.img-preview .img-wrap img {
+	width: 370px;
+	height: 370px;
+}
+
+.img-preview ul {
+	margin-top: 20px;
+	width: 370px;
+}
+
+.img-preview ul li{
+	float: left;
+	padding: 2px;
+	margin-right: 15px;
+	border: 1px solid #ddd;
+	cursor: pointer;
+}
+
+.img-preview ul .icon-item {
+	width: 10px;
+	height: 56px;
+	padding-top: 18px;
+}
+.img-preview ul .icon-item.fr {
+	float: right;
+	margin-right: 0;
+}
+
+.img-preview ul li img {
+	width: 50px;
+	height: 50px;
+}
+
+.img-preview .img-show {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	top: 0;
+	left: 0;
+	border: 1px #aaa solid;
+	background-color: #fff;
+	cursor: move;
+	opacity: 0.5;
+	transition: all 0.05s;
+	display: none;
+}
+
+.magnifier-wrap {
+	position: absolute;
+	/*background: url('../../image/banner/banner1.jpg');*/
+	top: 0;
+	left: 370px;
+	width: 300px;
+	height: 300px;
+	border: 1px #333 solid;
+	background-position: 0 0 ;
+	background-size: 740px 740px;
+	overflow: hidden;
+	display: none;
+}
+
+/*.magnifier-wrap img{
+	width: 740px;
+	height: 740px;
+}*/
+
+.goods-preview {
+	width: 520px;
+	height: 380px;
+	margin-right: 120px;
+}
+
+.goods-preview h1 {
+	font-size: 24px;
+}
+
+.goods-preview .goods-details {
+	width: 400px;
+	height: 100px;
+	margin-top: 15px;
+	padding: 10px 20px;
+	font-size: 16px;
+	background-color: #eee;
+}
+
+.goods-preview .old-price-wrap span {
+	text-decoration: line-through;
+}
+
+.goods-preview .new-price-wrap strong {
+	font-size: 25px;
+	font-weight: normal;
+	color: #f52648;
+}
+
+.goods-preview .goods-others {
+	font-size: 12px;
+	color: #999;
+}
+
+.goods-preview form {
+	color: #999;
+	padding: 10px;
+}
+
+.goods-preview form .goods-count,
+.goods-preview form .goods-fare,
+.goods-preview form .goods-seller {
+	margin-top: 10px;
+}
+
+
+.goods-preview form .count-btn {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	line-height: 13px;
+	border: 1px solid #999;
+	font-size: 14px;
+	text-align: center;
+}
+
+.goods-preview form .count-btn:hover{
+	color: #000;
+	border-color: #000; 
+}
+
+.goods-preview form .count-text {
+	width: 35px;
+	height: 20px;
+	border: 1px solid #999;
+	text-align: center; 
+	margin: 0 5px;
+}
+
+.goods-preview form .reduce-btn {
+	margin-left: 10px;
+}
+
+.goods-preview form .add-btn {
+	margin-right: 20px;
+}
+
+.goods-preview form .goods-stock {
+	color: #333;
+}
+
+.goods-preview form .seller-text {
+	color: #f60;
+}
+
+.goods-preview form .choose-btn-wrap {
+	margin-top: 20px;
+}
+
+.goods-preview form .choose-btn {
+	display: inline-block;
+	height: 35px;
+	padding: 0 20px;
+	line-height: 35px;
+	color: #fff;
+	font-size: 16px;
+}
+
+.goods-preview form .buy-btn {
+	background-color: #ff6500;
+	margin-right: 15px;
+}
+
+.goods-preview form .cart-btn {
+	background-color: #e31939;
+	margin-right: 15px;
+}
+
+.goods-preview form .love-btn {
+	color: #333;
+	border: 1px solid #ccc;
+	line-height: 34px;
+	font-size: 14px;
+}
+
+.goods-preview form .love-btn .not-love-i {
+	color: #baaa99;
+}
+
+.goods-preview form .love-btn .love-i {
+	color: #e31939; 
+}
+
+.goods-preview .goods-panel {
+	margin-top: 10px;
+	padding: 10px;
+}
+
+.goods-preview .goods-panel li {
+	float: left;
+	margin-right: 15px;
+}
+
+.gallery-item.active {
+	border: 2px solid #333;
+}
+
+

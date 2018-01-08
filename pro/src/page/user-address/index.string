@@ -1,0 +1,14 @@
+{{#data}}
+<tr>
+	<td>{{receiver}}</td>
+	<td>{{phone}}</td>
+	<td>{{province}} {{city}} {{address}}</td>
+	<td>
+		<a href="./user-address-update.html?addressId={{addressId}}">修改</a>
+		<a class="delete-address" href="">删除</a>
+	</td>
+</tr>
+{{/data}}
+{{^data}}
+    <div class="err-tip">暂无收货地址！</div>
+{{/data}}

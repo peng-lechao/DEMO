@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= htmlWebpackPlugin.options.title%></title>
+</head>
+<body>
+	<%= require ('html-withimg-loader!./layout/nav.html') %>
+	<header class="w">
+		<%= require ('html-withimg-loader!./layout/logo-search.html')%>
+	</header>
+	<section class="w">
+		<div class="menu">
+		</div>
+		<div class="banner-wrap">
+			<div class="prev ch-btn">
+				<i class="fa fa-angle-double-left fa-2x"></i>	
+			</div>
+			<div class="next ch-btn">
+				<i class="fa fa-angle-double-right fa-2x"></i>
+			</div>
+			<ul id="banner-content">
+				<li class='banner-item'>
+					<a href="">
+						<img src="<%= require('../image/banner/banner1.jpg')%>" alt="">
+					</a>
+				</li>
+				<li class='banner-item'>
+					<a href="">
+						<img src="<%= require('../image/banner/banner2.jpg')%>" alt="">
+					</a>
+				</li>
+				<li class='banner-item'>
+					<a href="">
+						<img src="<%= require('../image/banner/banner3.jpg')%>" alt="">
+					</a>
+				</li>
+				<li class='banner-item'>
+					<a href="">
+						<img src="<%= require('../image/banner/banner4.jpg')%>" alt="">
+					</a>
+				</li>
+			</ul>
+			<div class="dot-wrap">
+				<span class="dot-item active"></span>
+				<span class="dot-item"></span>
+				<span class="dot-item"></span>
+				<span class="dot-item"></span>
+			</div>
+		</div>
+		<div class="floor-wrap w">
+			<div class="floor-item">
+				<p class="floor-title">1FXXXX</p>
+				<a href="" >
+					<img src="<%= require('../image/banner/banner4.jpg')%>" alt="">
+					<p>1223</p>
+				</a>
+				<a href="" >
+					<img src="<%= require('../image/banner/banner4.jpg')%>" alt="">
+					<p></p>
+				</a>
+				<a href="" >
+					<img src="<%= require('../image/banner/banner4.jpg')%>" alt="">
+					<p></p>
+				</a>
+				<a href="" >
+					<img src="<%= require('../image/banner/banner4.jpg')%>" alt="">
+					<p>123</p>
+				</a>
+				<a href="" >
+					<img src="<%= require('../image/banner/banner4.jpg')%>" alt="">
+					<p></p>
+				</a>
+			</div>
+		</div>
+	</section>
+	<%= require ('html-loader!./layout/footer.html')%>
+</body>
+</html>

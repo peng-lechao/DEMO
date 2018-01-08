@@ -1,0 +1,23 @@
+.nav-top {
+	height: 25px;
+	line-height: 25px;
+	background-color: #eee;
+}
+
+.user {
+	position: absolute;
+}
+
+.nav-list li {
+	float: left;
+	text-align: right;
+}
+
+.nav-list li a {
+	display:inline-block;
+	width: 83px;
+}
+
+.user.login {
+	display: none;
+}

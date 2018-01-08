@@ -1,0 +1,4 @@
+<option value="0">请选择省份</option>
+{{#list}}
+	<option value={{name}}>{{name}}</option>
+{{/list}}

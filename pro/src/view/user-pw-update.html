@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= htmlWebpackPlugin.options.title%></title>
+</head>
+<body>
+	<%= require('html-loader!./layout/nav.html')%>
+	<header class="w">
+		<%= require('html-loader!./layout/logo.html')%>
+		<span class="logo-text">修改密码</span>
+	</header>
+	<section class="page-wrap">
+		<%= require ('html-loader!./layout/nav-route.html')%>
+		<div class="w">
+			<%= require('html-loader!./layout/nav-side.html')%>
+			<div class="fr page-content-wrap">
+				<p class="page-title">修改密码</p>
+				<div class="page-content">
+					<div class="tip-item error">
+			            <i class="fa fa-minus-circle error-icon"></i>
+			            <span class="err-msg">Error</span>
+			        </div>
+			        <div class="tip-item success">
+			            <i class="fa fa-check error-icon"></i>
+			            <span class="success-msg">success</span>
+			        </div>
+					<div class="info-item">
+				        <label for="password">原密码：</label>
+				        <input type="password" id="password" placeholder="请输入原密码">
+				    </div>
+				    <div class="info-item">
+				        <label for="newPassword">新密码：</label>
+				        <input type="password" id="newPassword" placeholder="请输入新密码" disabled>
+				    </div>
+				    <div class="info-item">
+				        <label for="comfirPassword">确认新密码：</label>
+				        <input type="password" id="comfirPassword" placeholder="请确认密码" disabled>
+				    </div>
+				    <span class="update-btn">保存修改</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<%=require('html-loader!./layout/footer.html')%>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= htmlWebpackPlugin.options.title%></title>
+</head>
+<body>
+	<%= require ('html-loader!./layout/nav.html') %>
+	<header class="w">
+		<%= require ('html-loader!./layout/logo-search.html')%>
+	</header>
+	<section class="list-wrap">
+		<%= require ('html-loader!./layout/nav-route.html')%>
+		<div class="w list-content">
+			<ul class="sort-con clearfix">
+				<li class="sort-item active" data-type="default">默认排序</li>
+                <li class="sort-item" data-type="price">
+                    <span>价格&nbsp;&nbsp;</span>
+                    <i class="fa fa-sort-asc"></i>
+                    <i class="fa fa-sort-desc"></i>
+                </li>
+			</ul>
+			<ul class="p-list">
+				
+			</ul>
+		</div>
+	</section>
+<%= require ('html-loader!./layout/footer.html')%>
+</body>
+</html>

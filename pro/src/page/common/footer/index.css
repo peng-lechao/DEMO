@@ -1,0 +1,12 @@
+.links-list {
+	width: 350px;
+	margin: 10px auto;
+}
+
+.links-list li{
+	float: left;
+}
+
+.footer-info p{
+	margin: 5px 0;
+}

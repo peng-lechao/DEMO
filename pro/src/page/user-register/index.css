@@ -1,0 +1,82 @@
+.w.register-wrap {
+	height: 530px;
+	margin: 20px auto;
+}
+
+.user-img {
+	position: absolute;
+	left: -700px;
+	transition: all 0.5s;
+}
+
+.user-img img {
+	width: 730px;
+	height: 530px;
+}
+
+.register-form {
+	position: absolute;
+	width: 350px;
+	height: 530px;
+	left: 1480px;
+	background-color: #fff;
+	transition: all 0.5s;
+}
+
+.user-title,.user-item {
+	width: 300px;
+	margin: 15px auto;
+}
+
+.user-title {
+	font-size: 20px;
+	padding: 0px;
+	border-bottom: 1px solid #8f0404;
+}
+
+.tip-item {
+	width: 300px;
+	margin: 0px auto;
+	padding: 0 5px;
+	font-size: 15px;
+	display: none;
+}
+
+.user-item {
+	position: relative;
+	height: 40px;
+	border: 1px solid #dbdbdb;
+}
+
+.user-item input {
+	width: 258px;
+	height: 38px;
+	margin-left: 40px;
+	font-size: 16px;
+}
+
+.user-item .user-label {
+	position: absolute;
+	width: 40px;
+	height: 38px;
+	background-color: #f3f3f3;
+	text-align: center;
+}
+
+.user-item .user-label i {
+	margin-top: 12px;
+	color: #d3d3d3;
+}
+
+.register-form .btn-submit {
+	display: block;
+	width: 300px;
+	height: 35px;
+	background-color: #E4393C;
+	margin: 15px auto;
+	color: #fff;
+	font-size: 16px;
+	line-height: 35px;
+	text-align: center;
+	cursor: pointer;
+}

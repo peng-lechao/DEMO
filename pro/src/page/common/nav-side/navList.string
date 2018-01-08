@@ -1,0 +1,10 @@
+{{#navList}}
+{{#isActive}}
+<li class="nav-side-item active">
+{{/isActive}}
+{{^isActive}}
+<li class="nav-side-item">
+{{/isActive}}
+<i class="{{iconClass}}"></i>&nbsp;<a href="{{href}}">{{desc}}</a>
+</li>
+{{/navList}}

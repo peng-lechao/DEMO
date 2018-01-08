@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= htmlWebpackPlugin.options.title%></title>
+</head>
+<body>
+	<header class="w logo-wrap">
+		<%= require('html-loader!./layout/logo.html')%>
+		<span class="logo-text">欢迎登录</span>
+	</header>
+	<section class="user-wrap w">
+		<div class="user-img">
+			<img src="<%= require('../image/banner/banner1.jpg')%>" alt="">
+		</div>
+		<div class="user-form">
+			<div class="user-title">用户登录</div>
+			<div class="tip-item error">
+                <i class="fa fa-minus-circle error-icon"></i>
+                <span class="err-msg">Error</span>
+            </div>
+            <div class="user-item">
+                <label class="user-label" for="">
+                    <i class="fa fa-user fa-lg"></i>
+                </label>
+                <input id="userName" class="user-content" placeholder="请输入用户名" autocomplete="off">
+            </div>
+            <div class="user-item">
+                <label class="user-label" for="password">
+                    <i class="fa fa-lock fa-lg"></i>
+                </label>
+                <input type="password" id="password" class="user-content" placeholder="请输入密码" autocomplete="off">
+            </div>
+            <a href="javascript:void(0)" class="btn-submit" id="submit">登 录</a>
+            <div class="link-item">
+            	<a href="./user-pw-reset.html">忘记密码？</a>
+            	<a href="./user-register.html">立刻注册</a>
+            </div>
+		</div>
+		
+	</section>
+
+	<%= require('html-loader!./layout/footer.html')%>
+</body>
+</html>
