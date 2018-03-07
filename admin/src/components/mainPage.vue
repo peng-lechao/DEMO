@@ -1,9 +1,4 @@
 <template>
-  <router-view></router-view>
-</template>
-
-
-<!-- <template>
   <el-container id="app">
     <el-header>
       <headerNav></headerNav>
@@ -15,33 +10,33 @@
       <el-container>
         <el-main>
           <router-view>
-            <slot name="main-title" class="main-title">123</slot>
+            <slot name="main-title" class="main-title"></slot>
           </router-view>
         </el-main> 
       </el-container> 
     </el-container>
-      <el-footer>Footer</el-footer>
+  <!--   <el-footer>Footer</el-footer> -->
   </el-container>
-</template> --> 
+</template>
 
 <script>
-// import headerNav from '@/components/common/header-nav';
-// import leftNav from '@/components/common/left-nav';
-// export default {
-//   name: 'app',
-//   components:{
-//     headerNav,
-//     leftNav
-//   },
-//   computed:{
-//   },
-//   methods:{
-//   }
-// }
+import headerNav from '@/components/common/header-nav';
+import leftNav from '@/components/common/left-nav';
+export default {
+  name: 'app',
+  components:{
+    headerNav,
+    leftNav
+  },
+  computed:{
+  },
+  methods:{
+  }
+}
 </script>
 
 <style>
-/** {
+* {
   padding: 0;
   margin: 0;
 }
@@ -102,6 +97,6 @@ body > .el-container {
 .clearfix{
     *zoom: 1;
 }
-*/
+
 </style>
 
