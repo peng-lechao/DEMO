@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= htmlWebpackPlugin.options.title%></title>
+</head>
+<body>
+	<%= require('html-loader!./layout/nav.html')%>
+	<header class="w">
+		<%= require('html-loader!./layout/logo.html')%>
+		<span class="logo-text">我的订单</span>
+	</header>
+	<section class="page-wrap">
+		<%= require ('html-loader!./layout/nav-route.html')%>
+		<div class="w page-con">
+			<%= require('html-loader!./layout/nav-side.html')%>
+			<!-- <div class="fr page-content-wrap order-details-wrap">
+				<p class="page-title">订单详情</p>
+				<div class="info-item">
+					<span class="details-text">订单号：14444</span>
+					<span class="details-text">创建时间：2017-12-27 21:11:55</span>
+				</div>
+				<div class="info-item">
+					<span class="details-text">收货人：132</span>
+					<span class="details-text">收货地址：广东省广州市黄埔区</span>
+				</div>
+				<div class="info-item">
+					<span class="details-text">订单状态：132</span>
+					<span class="details-text">支付方式：微信支付</span>
+				</div>
+				<a class="update-btn" href="">支付订单</a>
+				<a class="update-btn" href="">取消订单</a>
+			</div>
+			<div class="fr page-content-wrap">
+				<p class="page-title">商品列表</p>
+				<div class="page-content">
+					<table class="order-list-table order-item" cellspacing="0" cellpadding="0"> 
+						<tr>
+							<th class="title-cell img-cell">&nbsp;</th>
+							<th class="title-cell name-cell">宝贝信息</th>
+							<th class="title-cell price-cell">单价</th>
+							<th class="title-cell count-cell">数量</th>
+							<th class="title-cell total-cell">合计</th>
+						</tr>
+						<tr>
+							<td class="order-cell img-cell">
+								<img src="<%= require('../image/banner/banner1.jpg')%>" alt="">
+							</td>
+							<td class="order-cell name-cell">
+								<a href="">红木红木红木</a>
+							</td>
+							<td class="order-cell price-cell">￥144</td>
+							<td class="order-cell count-cell">1</td>
+							<td class="order-cell total-cell">￥144</td>
+						</tr>
+						<tr>
+							<td class="order-cell img-cell">
+								<img src="<%= require('../image/banner/banner1.jpg')%>" alt="">
+							</td>
+							<td class="order-cell name-cell">
+								<a href="">非洲花梨（刺猬紫檀）锦瑟年华三组电视柜三件套</a>
+							</td>
+							<td class="order-cell price-cell">￥144</td>
+							<td class="order-cell count-cell">1</td>
+							<td class="order-cell total-cell">￥144</td>
+						</tr>
+					</table>
+				</div>	
+			</div> -->
+		</div>
+	</section>
+	<%=require('html-loader!./layout/footer.html')%>
+</body>
+</html>

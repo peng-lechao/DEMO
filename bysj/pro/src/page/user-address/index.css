@@ -1,0 +1,48 @@
+.new-address-title {
+	margin : 0 10px;
+	color: #8f0404;
+	font-weight: bold;
+}
+
+.page-content-wrap .info-item:nth-of-type(2) {
+	text-indent: 14px;
+} 
+
+.page-content-wrap .info-item:nth-of-type(3) {
+	text-indent: 28px;
+}
+
+.receiver-info {
+	width: 800px;
+	margin: 10px;
+	border: 1px solid #eee;
+	text-align: left;
+}
+
+.receiver-info th,
+.receiver-info td {
+	height: 30px;
+	padding: 5px;
+}
+
+.receiver-info th {
+	background-color: #f2f2f2;
+}
+
+.receiver-info th:nth-of-type(1) {
+	width: 130px;
+}
+
+.receiver-info th:nth-of-type(2) {
+	width: 180px;
+}
+
+.receiver-info th:nth-of-type(3) {
+	width: 380px;
+}
+
+.tip-item {
+	width: 300px;
+	margin-left: 10px;
+	display: none;
+}

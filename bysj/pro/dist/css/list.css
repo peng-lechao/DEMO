@@ -1,0 +1,409 @@
+.nav-top {
+	height: 25px;
+	line-height: 25px;
+	background-color: #eee;
+}
+
+.user {
+	position: absolute;
+}
+
+.nav-list li {
+	float: left;
+	text-align: right;
+}
+
+.nav-list li a {
+	display:inline-block;
+	width: 83px;
+}
+
+.user.login {
+	display: none;
+}/**
+ * PostbirdAlertBox.js
+ * -    原生javascript弹框插件
+ * Author:  Postbird - http://www.ptbird.cn
+ * License: MIT
+ * Date:    2017-09-23
+ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.postbird-box-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.postbird-box-container.active {
+    display: block;
+}
+
+.postbird-box-content {
+    width: 400px;
+    max-width: 90%;
+    min-height: 150px;
+    background-color: #fff;
+    border: solid 1px #dfdfdf;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* margin-top: -100px; */
+}
+
+.postbird-box-header {
+    width: 100%;
+    padding: 10px 15px;
+    position: relative;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+}
+
+.postbird-box-close-btn {
+    cursor: pointer;
+    font-weight: 700;
+    color: #000;
+    float: right;
+    opacity: 0.5;
+    font-size: 1.3em;
+    margin-top: -3px;
+    display: none;
+}
+
+.postbird-box-close-btn:hover {
+    opacity: 1;
+}
+
+.postbird-box-text {
+    width: 100%;
+    padding: 0 10%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.postbird-box-footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    border-top: solid 1px #dfdfdf;
+    align-items: flex-end;
+}
+
+.postbird-box-footer .btn-footer {
+    line-height: 44px;
+    border: 0;
+    cursor: pointer;
+    background-color: #fff;
+    color: #0e90d2;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    transition: background-color .5s;
+    -webkit-transition: background-color .5s;
+    -o-transition: background-color .5s;
+    -moz-transition: background-color .5s;
+    outline: 0;
+}
+
+.postbird-box-footer .btn-footer:hover {
+    background-color: #e5e5e5;
+}
+
+.postbird-box-footer .btn-block-footer {
+    width: 100%;
+}
+
+.postbird-box-footer .btn-left-footer,
+.postbird-box-footer .btn-right-footer {
+    position: relative;
+    width: 100%;
+}
+
+.postbird-box-footer .btn-left-footer::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #e5e5e5;
+    height: 100%;
+    width: 1px;
+}
+
+.postbird-box-footer .btn-footer-cancel {
+    color: #333333;
+}
+
+.postbird-prompt-input {
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    outline: none;
+    padding:5px 10px 5px 10px;
+}.search {
+	width: 360px;
+	height: 40px;
+	margin: 20px auto;
+	border: 1px solid #8F0404;
+	font-size: 0;
+}
+
+.search input {
+	width: 300px;
+	height: 38px;
+}
+
+.search button {
+	width: 58px;
+	height: 38px;
+	background: #8F0404;
+}
+
+.search button:hover {
+	background: #760404;
+}
+.list-wrap {
+	width: 100%;
+	margin-top: 20px;
+}
+
+.sort-con li {
+	float: left;
+	position: relative;
+	margin: 10px 10px 10px 0;
+	padding: 5px;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	background-color: #fff;
+}
+
+.sort-con li i {
+	position: absolute;
+	top: 9px;
+	left: 32px;
+}
+
+.sort-con .active {
+	background-color: #8f0404;
+	border: 1px solid #8f0404;
+	color: #fff;
+}
+
+.p-list {
+	padding: 1px;
+}
+
+.p-item {
+	position: relative;
+	float: left;
+	width: 200px;
+	margin:10px 0 15px 0;
+	margin-right: 19px;
+	padding: 10px;
+	background-color: #fff;
+	transition: all 0.5s;
+}
+
+.p-item:nth-of-type(5n) {
+	margin-right: 0;
+}
+
+.p-item:hover {
+	box-shadow: 0px 0px 5px #333;
+	color: #8f0404;
+}
+
+.p-item .p-img-con,
+.p-item .p-img-con .p-img{
+	width: 180px;
+	height: 200px;
+	margin: 0 auto;
+}
+
+.p-item .p-price-con .p-price {
+	display: inline-block;
+	margin: 5px 0 0 0;
+	color: #ec5051;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.p-item .p-price-con .p-sales {
+	display: inline-block;
+	float: right;
+	line-height: 35px;
+	color: #9fa0a0;
+}
+
+.p-item .p-name-con {
+	height: 30px;
+	margin-top: 7px;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.p-item .p-name-con .p-name {
+	font-size: 14px;
+	color: #666;
+}
+
+.p-item .p-name-con .p-name:hover {
+	color: #8f0404;
+}
+
+.p-footer .add-cart {
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #ddd;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.p-footer .add-cart:hover {
+	border: 1px solid #ec5151;
+}
+
+.p-footer .add-cart i {
+	font-size: 17px;
+	color: #ec5151;
+}
+
+.p-footer .add-cart span {
+	padding-left: 2px;
+	font-size: 14px;
+	color: #ec5151; 
+}
+
+.p-footer .add-cart span:hover {
+	color: #ec5151;
+}
+
+.p-footer .shop-info {
+	padding-top: 10px
+}
+
+.p-footer .shop-info i{
+	color: #F68A00;
+}
+
+.p-footer .shop-info span {
+	color: #3a78bf;
+}
+
+.p-footer .shop-info span:hover {
+	color: #3a78bf;
+}
+
+.checked {
+	color: #fff;
+}
+
+.list-route {
+	height: 43px;
+	/*margin-bottom: 15px;*/
+	background-color: #eee;
+	border-top: 3px #8f0404 solid;
+}
+
+.route-content {
+	font-size: 14px;
+	line-height: 40px;
+}* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.fl {
+  float: left;
+}
+.box {
+  width: 650px;
+  height: 40px;
+  line-height: 40px;
+  margin: 20px auto;
+/*  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);*/
+  text-align: center;
+}
+.box button {
+  padding: 0 10px;
+  margin: 0 10px;
+  height: 40px;
+  float: left;
+  cursor: pointer;
+  border: 1px solid #ebebeb;
+  background-color: #ffffff;
+  color: #333;
+}
+.box .first-page,
+.box .last-page {
+  margin: 0;
+  color: #333;
+}
+.box .pageWrap {
+  height: 40px;
+  float: left;
+  overflow: hidden;
+}
+.box .pageWrap ul {
+  width: 100000px;
+  height: 40px;
+  float: left;
+}
+.box .pageWrap ul li {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ebebeb;
+  line-height: 40px;
+  box-sizing: border-box;
+  cursor: pointer;
+  float: left;
+}
+.box .pageWrap ul .sel-page {
+  background-color: #F66;
+  color: #fff;
+}
+.box .jump-text {
+  width: 60px;
+  height: 40px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 5px;
+  float: left;
+  color: #333;
+}
+.box .jump-button {
+  margin: 0;
+  float: left;
+}
+.box .total-pages,
+.box .total-count {
+  margin-left: 10px;
+  float: left;
+  font-size: 14px;
+}

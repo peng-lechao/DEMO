@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= htmlWebpackPlugin.options.title%></title>
+</head>
+<body>
+	<%= require('html-loader!./layout/nav.html')%>
+	<header class="w">
+		<%= require('html-loader!./layout/logo.html')%>
+		<span class="logo-text">收货地址</span>
+	</header>
+	<section class="page-wrap">
+		<%= require ('html-loader!./layout/nav-route.html')%>
+		<div class="w">
+			<%= require('html-loader!./layout/nav-side.html')%>
+			<div class="fr page-content-wrap">
+					<p class="page-title">收货地址</p>
+					<div class="page-content">
+						<p class="new-address-title">新增收货地址</p>
+						<div class="tip-item error">
+				            <i class="fa fa-minus-circle error-icon"></i>
+				            <span class="err-msg">Error</span>
+				        </div>
+						<%= require('html-loader!./layout/address.html')%>
+						<span class="update-btn">保存收货地址</span>
+					</div>
+					<p class="new-address-title">已有收货地址</p>
+					<table class="receiver-info">
+						<tr class="table-head">
+							<th>收货人</th>
+							<th>电话</th>
+							<th>收货地址</th>
+							<th>操作</th>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+	<%=require('html-loader!./layout/footer.html')%>
+</body>
+</html>

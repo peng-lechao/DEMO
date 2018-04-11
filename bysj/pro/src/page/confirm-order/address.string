@@ -1,0 +1,17 @@
+
+{{#list}}
+<div class="address-content address-list">
+	<input type="hidden" value={{addressId}} class="addressId">
+	<p class="receiver"><i class="fa fa-user"></i>&nbsp;{{receiver}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-phone"></i>&nbsp;{{phone}}</p>
+	<p class="address-city"><i class="fa fa-home"></i>&nbsp;{{province}} &nbsp;{{city}} &nbsp;</p>
+	<p class="address-details">{{address}}</p>
+	<p class="edit-address fr">编辑地址</p>
+</div>
+{{/list}}
+{{^list}}
+	<div class="empty-address">暂无地址信息</div>
+{{/list}}
+<div class="address-content add-address">
+	<p class=""><i class="fa fa-plus fa-4x"></i></p>
+	<p class="">使用新地址</p>
+</div>

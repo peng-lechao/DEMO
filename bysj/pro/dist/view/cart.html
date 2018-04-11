@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车详情</title>
+<link href="/pro/dist/css/cart.css?5d27a33b2b361484b191" rel="stylesheet"><link href="/pro/dist/css/common.css?5d27a33b2b361484b191" rel="stylesheet"></head>
+<body>
+	<nav class="nav-top">
+	<div class="w">
+		<div class="user-info fl">
+			<div class="user not-login">
+				<span class="js-login link">登录</span>
+				<span class="js-register link">注册</span>
+			</div>
+			<div class="user login">
+				欢迎，
+				<span class="user-name"></span>
+				<span class="js-logout link">退出</span>
+			</div>
+		</div>
+		<ul class="nav-list fr">
+			<li>
+				<a href="./cart.html">
+					<i class="fa fa-shopping-cart"></i>
+					购物车(<span class="cart-count">0</span>)
+				</a>
+			</li>
+			<li>
+				<a href="./order-list.html">我的订单</a>
+			</li>
+			<li>
+				<a href="./user-center.html">个人中心</a>
+			</li>
+			<li>
+				<a href="./about.html">关于我们</a>
+			</li>
+			
+		</ul>
+	</div>
+</nav>
+	<header class="w">
+		<div class="logo fl">
+	<a href="./index.html"><img src="/pro/dist/resource/logo.png" alt=""></a>
+</div>
+<div class="search">
+	<input type="search" class="search-text">
+	<button type="submit" class="search-btn">搜 索</button>
+</div>
+
+	</header>
+	<section class="cartMain w">
+		<div class="con-title">
+			<span>我的购物车</span>
+		</div>
+		<div class="cartMain_hd">
+			<ul class="order_lists cartTop">
+				<li class="list_chk">
+					<!--所有商品全选-->
+					<input type="checkbox" id="all" class="whole_check">
+					<label for="all"></label>
+					全选
+				</li>
+				<li class="list_info">商品 ID</li>
+				<li class="list_con">商品信息</li>
+				<li class="list_price">单价</li>
+				<li class="list_amount">数量</li>
+				<li class="list_sum">金额</li>
+				<li class="list_op">操作</li>
+			</ul>
+		</div>
+
+		<div class="cartBox">
+			<div class="order_content">
+
+			</div>
+		</div>
+		<!--底部-->
+		<div class="bar-wrapper w">
+			<div class="bar-right">
+				<div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
+				<div class="totalMoney">共计: <strong class="total_text">￥0.00</strong></div>
+				<div class="calBtn"><a href="javascript:;">结算</a></div>
+			</div>
+		</div>
+	</section>
+<section class="model_bg"></section>
+<section class="my_model">
+	<p class="title">删除宝贝<span class="closeModel">X</span></p>
+	<p>您确认要删除该宝贝吗？</p>
+	<div class="opBtn"><a href="javascript:;" class="dialog-sure">确定</a><a href="javascript:;" class="dialog-close">关闭</a></div>
+</section>
+<!-- 	<section class="page-wrap">
+		<div class="list-route">
+	<div class="w route-content">
+		<a href="">首页</a>>
+		<a href="">卧室</a>
+	</div>
+</div>
+	</section> -->
+	<footer>
+	<div class="w">
+		<ul class="links-list clearfix">
+			<li>友情链接：</li>
+			<li>
+				<a href="http://www.taobao.com/" target="_blank">&nbsp;淘宝网</a> | 
+			</li>
+			<li>
+				<a href="http://www.jd.com/" target="_blank">&nbsp;京东商城</a> | 
+			</li>
+			<li>
+				<a href="http://www.328f.com/" target="_blank">&nbsp;红木云</a> | 
+			</li>
+			<li>
+				<a href="http://www.dongzuoyun.com/" target="_blank">&nbsp;东作云</a> | 
+			</li>
+			<li>
+				<a href="http://www.hongmubao.com/" target="_blank">&nbsp;红木宝</a> | 
+			</li>
+		</ul>
+		<div class="footer-info clearfix">
+			<p>© 2005-2017 xxx官网_红木家具网上商城 版权所有，并保留所有权利。</p>
+			<p>粤ICP备14xxxxxx号   Tel: 400-xxxx-xxx</p>
+		</div>
+	</div>
+</footer>
+<script type="text/javascript" src="/pro/dist/js/jquery.js?5d27a33b2b361484b191"></script><script type="text/javascript" src="/pro/dist/js/cart.js?5d27a33b2b361484b191"></script><script type="text/javascript" src="/pro/dist/js/common.js?5d27a33b2b361484b191"></script></body>
+</html>

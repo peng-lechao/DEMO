@@ -1,0 +1,21 @@
+<div class="info-item">
+    <span class="label">用户名：</span>
+    <span class="text">{{userName}}</span>
+</div>
+<div class="info-item">
+    <span class="label">手机：</span>
+    <span class="text">{{phone}}</span>
+</div>
+<div class="info-item">
+    <span class="label">邮箱：</span>
+    <span class="text">{{email}}</span>
+</div>
+<div class="info-item">
+    <span class="label">真实姓名：</span>
+    <span class="text">{{realname}}</span>
+</div>
+<div class="info-item">
+    <span class="label">个性签名：</span>
+    <span class="text">{{introduction}}</span>
+</div>
+<a class="update-btn" href="./user-center-update.html">编辑个人信息</a>

@@ -1,0 +1,11 @@
+.list-route {
+	height: 43px;
+	/*margin-bottom: 15px;*/
+	background-color: #eee;
+	border-top: 3px #8f0404 solid;
+}
+
+.route-content {
+	font-size: 14px;
+	line-height: 40px;
+}

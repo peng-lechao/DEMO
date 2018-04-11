@@ -1,0 +1,19 @@
+{{#list}}
+<tr class="info">
+	<td class="order-cell img-cell">
+		<img src={{original_img}} alt="">
+	</td>
+	<td class="order-cell name-cell">
+		<input type="hidden" value={{goods_id}} class="goodsId">
+		<a href="./list-details.html?goods_id={{goods_id}}">{{goods_name}}</a>
+	</td>
+	<td class="order-cell price-cell">￥{{shop_price}}</td>
+	<td class="order-cell action-cell">
+		<a href="javascript:void(0)" class="cancel-love">取消收藏</a>
+	</td>
+</tr>
+{{/list}}
+
+{{^list}}
+	<p>暂无收藏！</p>
+{{/list}}

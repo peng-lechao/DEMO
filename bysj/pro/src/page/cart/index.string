@@ -1,0 +1,47 @@
+
+	{{#list}}
+		<ul class="order_lists">
+			<li class="list_chk">
+				<input type="checkbox" id={{goods_id}} class="son_check">
+				<label for={{goods_id}}></label>
+			</li>
+			<li class="list_info">
+				<p>{{goods_id}}</p>
+				<input type="hidden" value={{goods_id}} class="goods_id">
+			</li>
+			<li class="list_con">
+				<div class="list_img">
+					<a href='./list-details.html?goods_id={{goods_id}}'>
+						<img src={{original_img}} alt="">
+					</a></div>
+				<div class="list_text">
+					<a href='./list-details.html?goods_id={{goods_id}}'>{{goods_name}}</a>
+				</div>
+			</li>
+
+			<li class="list_price">
+				<p class="price">￥{{shop_price}}</p>
+			</li>
+			<li class="list_amount">
+				<div class="amount_box">
+					<!-- <i class="fa fa-plus"></i> -->
+					<a href="javascript:;" class="reduce reSty"><i class="fa fa-minus"></i></a>
+					<input type="text" value="{{goods_num}}" class="sum">
+					<!-- <i class="fa fa-plus"></i> -->
+					<a href="javascript:;" class="plus"><i class="fa fa-plus"></i></a>
+				</div>
+			</li>
+			<li class="list_sum">
+				<p class="sum_price">￥{{sum}}</p>
+			</li>
+			<li class="list_op">
+				<p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+			</li>
+		</ul>
+	{{/list}}
+
+{{^list}}
+	<div class="empty-cart">
+		<p>您的购物车还没有商品！<a href="./index.html">前往购物>></a></p>
+	</div>
+{{/list}}

@@ -1,0 +1,21 @@
+<ul class="type-menu">		
+	{{#listItem}}
+	<li class="list-item" data-index={{dataIndex}}>
+		<span>{{name}}</span>&nbsp;
+		<i class="fa fa-angle-double-right"></i>
+	</li>
+	{{/listItem}}
+</ul>
+<div class="type-content clearfix">
+	{{#listItem}}
+	<div class='item' data-index={{dataIndex}}>
+		<div class='item-title clearfix'>
+			<p class='name-title fl'>{{name}}</p>
+			<a href='./list.html?type={{id}}' class='link fr'>更多 ></a>
+		</div>
+		{{#children}}
+		<a href="./list.html?type={{p_id}}&id={{id}}" class="item-link link">{{name}}</a>|
+		{{/children}}
+	</div>
+	{{/listItem}}
+</div>

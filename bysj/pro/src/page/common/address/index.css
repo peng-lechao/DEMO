@@ -1,0 +1,15 @@
+select {
+	height: 28px;
+	outline: none;
+}
+
+
+.info-item input,
+.info-item textarea {
+	border: 1px solid #999;
+}
+
+.info-item textarea {
+	width: 260px;
+	vertical-align: top;
+}

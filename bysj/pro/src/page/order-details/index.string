@@ -1,0 +1,49 @@
+{{#list}}
+<div class="fr page-content-wrap order-details-wrap">
+	<p class="page-title">订单详情</p>
+	<div class="info-item">
+		<span class="details-text">订单号：{{order_id}}</span>
+		<span class="details-text">创建时间：{{date}}</span>
+	</div>
+	<div class="info-item">
+		<span class="details-text">收货人：{{receiver}}</span>
+		<span class="details-text">收货地址：{{province}} {{city}}  {{address}}</span>
+	</div>
+	<div class="info-item">
+		<span class="details-text">订单状态：<span class="status">{{status}}</span></span>
+		<span class="details-text">支付方式：{{pay}}</span>
+	</div>
+	<div class="info-item">
+		<span class="details-text">订单备注：{{tips}}</span>
+	</div>
+	<a class="update-btn" href="./order-list.html">返回订单</a>
+	<button class="cancel-order">取消订单</button>
+</div>
+<div class="fr page-content-wrap">
+	<p class="page-title">商品列表</p>
+	<div class="page-content">
+		<table class="order-list-table order-item" cellspacing="0" cellpadding="0"> 
+			<tr>
+				<th class="title-cell img-cell">&nbsp;</th>
+				<th class="title-cell name-cell">宝贝信息</th>
+				<th class="title-cell price-cell">单价</th>
+				<th class="title-cell count-cell">数量</th>
+				<th class="title-cell total-cell">合计</th>
+			</tr>
+			{{#item}}
+			<tr>
+				<td class="order-cell img-cell">
+					<img src="{{original_img}}" alt="">
+				</td>
+				<td class="order-cell name-cell">
+					<a href="">{{goods_name}}</a>
+				</td>
+				<td class="order-cell price-cell">￥{{shop_price}}</td>
+				<td class="order-cell count-cell">{{goods_num}}</td>
+				<td class="order-cell total-cell">￥{{sum_price}}</td>
+			</tr>
+			{{/item}}
+		</table>
+	</div>	
+</div>
+{{/list}}

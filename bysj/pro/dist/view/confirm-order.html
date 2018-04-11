@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>确认订单</title>
+<link href="/pro/dist/css/confirm-order.css?5d27a33b2b361484b191" rel="stylesheet"><link href="/pro/dist/css/common.css?5d27a33b2b361484b191" rel="stylesheet"></head>
+<body>	
+	<div id="dialog-modal">
+	</div>
+	<nav class="nav-top">
+	<div class="w">
+		<div class="user-info fl">
+			<div class="user not-login">
+				<span class="js-login link">登录</span>
+				<span class="js-register link">注册</span>
+			</div>
+			<div class="user login">
+				欢迎，
+				<span class="user-name"></span>
+				<span class="js-logout link">退出</span>
+			</div>
+		</div>
+		<ul class="nav-list fr">
+			<li>
+				<a href="./cart.html">
+					<i class="fa fa-shopping-cart"></i>
+					购物车(<span class="cart-count">0</span>)
+				</a>
+			</li>
+			<li>
+				<a href="./order-list.html">我的订单</a>
+			</li>
+			<li>
+				<a href="./user-center.html">个人中心</a>
+			</li>
+			<li>
+				<a href="./about.html">关于我们</a>
+			</li>
+			
+		</ul>
+	</div>
+</nav>
+	<header class="w">
+		<div class="logo fl">
+	<a href="./index.html"><img src="/pro/dist/resource/logo.png" alt=""></a>
+</div>
+<div class="search">
+	<input type="search" class="search-text">
+	<button type="submit" class="search-btn">搜 索</button>
+</div>
+
+	</header>
+	<div id="dialog">
+		<div class="dialog-title">
+			<span>收货地址</span>
+			<i class="fa fa-close fr close-btn"></i>
+		</div>
+		<div class="tip-item error">
+            <i class="fa fa-minus-circle error-icon"></i>
+            <span class="err-msg">Error</span>
+        </div>
+		<div class="dialog-content">
+			
+	<div class="info-item">
+		<label for="receiver">收货人：</label>
+   		<input type="text" id="receiver" maxlength="5" placeholder="请输入收货人姓名">
+	</div>
+	<div class="info-item">
+		<label for="phone">电话：</label>
+   		<input type="text" id="phone" placeholder="请输入收货人电话">
+	</div>
+	<div class="info-item">
+		<label for="">所在地区：</label>
+		<select id="province" name="province">
+		</select> 
+		<select id="city" name="city" >
+			<option value="0">请选择市/区/县</option>
+		</select> 
+	</div>
+	<div class="info-item">
+		<label for="address">详细地址：</label>
+   		<textarea id="address" placeholder="请输入收货人详细地址"></textarea>
+	</div>
+
+
+
+		</div>
+		<div class="dialog-footer">
+			<button id="cancel-btn">取消</button>
+			<button id="ok-btn">保存</button>
+		</div>
+	</div>
+	<section class="order-wrap">
+		<section class="w address">
+			<div class="section-title">收货地址</div>
+		</section>
+
+		<section class="w pay">
+			<div class="section-title">支付方式</div>
+			<div class="pay-wrap">
+				<div class="pay-item">
+					<label for="wechat-pay">
+						<img src="/admin_php/image/icon/wechat-pay.png" alt="">
+					</label>
+					<div class="pay-text">
+						<input type="radio" name="pay"  value="微信支付" id="wechat-pay" class="radio" checked>
+						<label for="wechat-pay">微信支付</label>
+					</div>	
+				</div>
+				<div class="pay-item">
+					<label for="ali-pay">
+						<img src="/admin_php/image/icon/ali-pay.png" alt="">
+					</label>
+					<div class="pay-text">
+						<input type="radio" name="pay"  value="支付宝支付" class="radio" id="ali-pay">
+						<label for="ali-pay">支付宝支付</label>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="w deliver">
+			<div class="section-title">配送方式</div>
+			<div class="deliver-item">
+				<i class="fa fa-truck"></i>
+				<span>自营快递</span>
+			</div>
+		</section>
+		<section class="w order-info">
+			<div class="section-title">商品信息</div>
+			<ul class="list-title">
+				<li class="list-info">商品信息</li>
+				<li class="list-price">商品价格</li>
+				<li class="list-count">购买数量</li>
+				<li class="list-sum">小 计</li>
+			</ul>
+	
+		</section>
+		<section class="footer-info w">
+			<div class="user-tips fl">
+				<p>订单备注</p>
+				<textarea name="" id="" cols="40" rows="5" class="input-tips"></textarea>
+			</div>
+			<ul class="goods-account fr">
+				<li class="total-money">
+					<span class="list-left">订单总额 :</span>
+					<span class="list-right"></span>
+				</li>
+				<li class="discount">
+					<span class="list-left">活动优惠 :</span>
+					<span class="list-right">0.00元</span>
+				</li>
+				<li class="deliver-money">
+					<span class="list-left">商品运费 :</span>
+					<span class="list-right">0.00元</span>
+				</li>
+				<li class="infact-money">
+					<span class="list-left">应付总额 :</span>
+					<span class="list-right pay-money"></span>
+				</li>
+			</ul>
+		</section>
+		<section class="footer-btn w">		
+			<button class="goback-cart">返回购物车</button>
+			<button class="go-pay">确认订单</button>
+		</section>
+	</section>
+	<footer>
+	<div class="w">
+		<ul class="links-list clearfix">
+			<li>友情链接：</li>
+			<li>
+				<a href="http://www.taobao.com/" target="_blank">&nbsp;淘宝网</a> | 
+			</li>
+			<li>
+				<a href="http://www.jd.com/" target="_blank">&nbsp;京东商城</a> | 
+			</li>
+			<li>
+				<a href="http://www.328f.com/" target="_blank">&nbsp;红木云</a> | 
+			</li>
+			<li>
+				<a href="http://www.dongzuoyun.com/" target="_blank">&nbsp;东作云</a> | 
+			</li>
+			<li>
+				<a href="http://www.hongmubao.com/" target="_blank">&nbsp;红木宝</a> | 
+			</li>
+		</ul>
+		<div class="footer-info clearfix">
+			<p>© 2005-2017 xxx官网_红木家具网上商城 版权所有，并保留所有权利。</p>
+			<p>粤ICP备14xxxxxx号   Tel: 400-xxxx-xxx</p>
+		</div>
+	</div>
+</footer>
+<script type="text/javascript" src="/pro/dist/js/jquery.js?5d27a33b2b361484b191"></script><script type="text/javascript" src="/pro/dist/js/confirm-order.js?5d27a33b2b361484b191"></script><script type="text/javascript" src="/pro/dist/js/common.js?5d27a33b2b361484b191"></script></body>
+</html>

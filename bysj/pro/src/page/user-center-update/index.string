@@ -1,0 +1,22 @@
+<div class="info-item">
+    <span class="label">用户名：</span>
+    <span class="text">{{userName}}</span>
+</div>
+<div class="info-item">
+    <label for="phone">手机：</label>
+    <input type="text" value="{{phone}}" id="phone">
+</div>
+<div class="info-item">
+    <label for="mail">邮箱：</label>
+    <input type="email" value="{{email}}" id="email">
+</div>
+<div class="info-item">
+    <label for="realname">真实姓名：</label>
+    <input type="text" value="{{realname}}" id="realname">
+</div>
+<div class="info-item">
+    <label for="introduction">个性签名：</label>
+   	<input type="text" id="introduction" value="{{introduction}}" maxlength="20">
+    <span>20字以内</span>
+</div>
+<span class="update-btn">保存个人信息</span>

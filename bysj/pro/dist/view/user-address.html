@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>收货地址</title>
+<link href="/pro/dist/css/user-address.css?5d27a33b2b361484b191" rel="stylesheet"><link href="/pro/dist/css/common.css?5d27a33b2b361484b191" rel="stylesheet"></head>
+<body>
+	<nav class="nav-top">
+	<div class="w">
+		<div class="user-info fl">
+			<div class="user not-login">
+				<span class="js-login link">登录</span>
+				<span class="js-register link">注册</span>
+			</div>
+			<div class="user login">
+				欢迎，
+				<span class="user-name"></span>
+				<span class="js-logout link">退出</span>
+			</div>
+		</div>
+		<ul class="nav-list fr">
+			<li>
+				<a href="./cart.html">
+					<i class="fa fa-shopping-cart"></i>
+					购物车(<span class="cart-count">0</span>)
+				</a>
+			</li>
+			<li>
+				<a href="./order-list.html">我的订单</a>
+			</li>
+			<li>
+				<a href="./user-center.html">个人中心</a>
+			</li>
+			<li>
+				<a href="./about.html">关于我们</a>
+			</li>
+			
+		</ul>
+	</div>
+</nav>
+	<header class="w">
+		<div class="logo fl">
+	<a href="./index.html"><img src="/pro/dist/resource/logo.png" alt=""></a>
+</div>
+		<span class="logo-text">收货地址</span>
+	</header>
+	<section class="page-wrap">
+		<div class="list-route">
+	<div class="w route-content">
+		<a href="">首页</a>>
+		<a href="">卧室</a>
+	</div>
+</div>
+		<div class="w">
+			<ul class="nav-side fl">
+</ul>
+			<div class="fr page-content-wrap">
+					<p class="page-title">收货地址</p>
+					<div class="page-content">
+						<p class="new-address-title">新增收货地址</p>
+						<div class="tip-item error">
+				            <i class="fa fa-minus-circle error-icon"></i>
+				            <span class="err-msg">Error</span>
+				        </div>
+						
+	<div class="info-item">
+		<label for="receiver">收货人：</label>
+   		<input type="text" id="receiver" maxlength="5" placeholder="请输入收货人姓名">
+	</div>
+	<div class="info-item">
+		<label for="phone">电话：</label>
+   		<input type="text" id="phone" placeholder="请输入收货人电话">
+	</div>
+	<div class="info-item">
+		<label for="">所在地区：</label>
+		<select id="province" name="province">
+		</select> 
+		<select id="city" name="city" >
+			<option value="0">请选择市/区/县</option>
+		</select> 
+	</div>
+	<div class="info-item">
+		<label for="address">详细地址：</label>
+   		<textarea id="address" placeholder="请输入收货人详细地址"></textarea>
+	</div>
+
+
+
+						<span class="update-btn">保存收货地址</span>
+					</div>
+					<p class="new-address-title">已有收货地址</p>
+					<table class="receiver-info">
+						<tr class="table-head">
+							<th>收货人</th>
+							<th>电话</th>
+							<th>收货地址</th>
+							<th>操作</th>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+	<div class="w">
+		<ul class="links-list clearfix">
+			<li>友情链接：</li>
+			<li>
+				<a href="http://www.taobao.com/" target="_blank">&nbsp;淘宝网</a> | 
+			</li>
+			<li>
+				<a href="http://www.jd.com/" target="_blank">&nbsp;京东商城</a> | 
+			</li>
+			<li>
+				<a href="http://www.328f.com/" target="_blank">&nbsp;红木云</a> | 
+			</li>
+			<li>
+				<a href="http://www.dongzuoyun.com/" target="_blank">&nbsp;东作云</a> | 
+			</li>
+			<li>
+				<a href="http://www.hongmubao.com/" target="_blank">&nbsp;红木宝</a> | 
+			</li>
+		</ul>
+		<div class="footer-info clearfix">
+			<p>© 2005-2017 xxx官网_红木家具网上商城 版权所有，并保留所有权利。</p>
+			<p>粤ICP备14xxxxxx号   Tel: 400-xxxx-xxx</p>
+		</div>
+	</div>
+</footer>
+<script type="text/javascript" src="/pro/dist/js/jquery.js?5d27a33b2b361484b191"></script><script type="text/javascript" src="/pro/dist/js/user-address.js?5d27a33b2b361484b191"></script><script type="text/javascript" src="/pro/dist/js/common.js?5d27a33b2b361484b191"></script></body>
+</html>

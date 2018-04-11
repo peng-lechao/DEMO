@@ -1,0 +1,56 @@
+.order-list-table {
+	width: 850px;
+	margin: 10px auto;
+	border: 1px solid #ddd;
+	background-color: #fafafa;
+}
+
+.order-list-table th{
+	background-color: #eee;
+	text-align: left;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px;
+}
+
+.order-list-table .order-info {
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 10px;
+}
+
+.order-list-table td {
+	border-bottom: 1px solid #ddd;
+}
+
+.order-list-table .order-info:last-child {
+	float: right;
+}
+
+.order-list-table .order-cell {
+	height: 120px;
+	padding: 0 10px;
+}
+
+.order-list-table .img-cell {
+	width: 20%;
+}
+
+.order-list-table .img-cell img {
+	width: 100px;
+	height: 100px;
+}
+
+.order-list-table .name-cell {
+	width: 35%;
+}
+
+.order-list-table .price-cell {
+	width: 20%;
+}
+
+.order-list-table .count-cell, 
+.order-list-table .action-cell{
+	width: 15%;
+}

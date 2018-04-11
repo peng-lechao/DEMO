@@ -1,0 +1,33 @@
+{{#list}}
+<table class="order-list-table order-item" cellspacing="0" cellpadding="0"> 
+	<tr class="order-title">
+		<th colspan="6">
+			<span class="order-info">订单号：{{order_id}}</span>
+			<span class="order-info">{{date}}</span>
+			<span class="order-info">收货人：{{receiver}}</span>
+			<span class="order-info">订单状态：{{status}}</span>
+			<span class="order-info">订单价格：￥{{total}}</span>
+			<span class="order-info"><a href="./order-details.html?order_id={{order_id}}" class="order-details">订单详情>></a></span>
+		</th>
+	</tr>
+	{{#item}}
+	<tr>
+		<td class="order-cell img-cell">
+			<img src={{original_img}} alt="">
+		</td>
+		<td class="order-cell name-cell">
+			<a href="./list-details.html?goods_id={{goods_id}}">{{goods_name}}</a>
+		</td>
+		<td class="order-cell price-cell">￥{{shop_price}}</td>
+		<td class="order-cell count-cell">{{goods_num}}</td>
+		<td class="order-cell total-cell">￥{{sum_price}}</td>
+	</tr>
+	{{/item}}
+</table>
+{{/list}}
+{{^list}}
+	<div>您还没有订单！</div>
+{{/list}}
+					
+						
+					

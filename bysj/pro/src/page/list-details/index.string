@@ -1,0 +1,89 @@
+{{#list}}
+<section class="w preview">
+	<div class="img-preview fl">
+		<div class="img-wrap">
+			<div class="img-show"></div>
+			<img src={{original_img}} alt="" class="active-img">
+		</div>
+		<ul class="goods-gallery clearfix">
+			<li class="icon-item">
+				<i class="fa fa-angle-left"></i>
+			</li>
+			<li class="gallery-item active">
+				<img src={{original_img}} alt="">
+			</li>
+			{{#img}}
+			<li class="gallery-item">
+				<img src={{url}} alt={{name}}>
+			</li>
+			{{/img}}
+			<li class="icon-item fr">
+				<i class="fa fa-angle-right"></i>
+			</li>
+		</ul>
+		<div class="magnifier-wrap">
+		</div>
+	</div>
+	<div class="goods-preview fr">
+		<h1 class="goods-name">{{goods_name}}</h1>
+		<div class="goods-details">
+			<div class="old-price-wrap">
+				<span>市场价：<span class="old-price">{{market_price}}</span></span>
+			</div>
+			<div class="new-price-wrap">
+				<span>红木汇价：<strong>{{shop_price}}</strong></span>
+			</div>
+			<div class="goods-others">
+				<span class="sale-text">已售：<span class="sale-count">{{sales_sum}}</span></span>&nbsp;&nbsp;|&nbsp;
+				<span class="mark-text">用户评论：<span class="mark-count">0</span></span>
+			</div>
+		</div>
+		<form action="">
+			<div class="goods-count">
+				<span>数量：</span>
+				<a class="count-btn reduce-btn" href="javascript:void(0)" id="reduce-btn">-</a>
+				<input type="number" class="count-text" value="1" id="count-text" min="0">
+				<a class="count-btn add-btn" href="javascript:void(0)" id="add-btn">+</a>
+				<span class="goods-stock">(库存：<span class="stock-count">{{store_count}}</span>)</span>
+			</div>
+			<div class="goods-fare">
+				<span>运费：<span class="fare-text">包邮</span></span>
+			</div>
+			<div class="goods-seller">
+				<span>商家：该商品由&nbsp;<span class="seller-text">红木汇</span>&nbsp;发货，并提供售后服务</span>
+			</div>
+			<div class="choose-btn-wrap" id="btn-wrap">
+				<a class="choose-btn buy-btn" href="javascript:void(0)" id="buy-btn">立即购买</a>
+				<a class="choose-btn cart-btn" href="javascript:void(0)" id="cart-btn">加入购物车</a>
+				<a class="choose-btn love-btn" href="javascript:void(0)" id="love-btn"><i class="fa fa-heart-o not-love-i" id="love-icon"></i>&nbsp;<span id="love-text">收藏</span></a>
+			</div>
+		</form>
+		<ul class="goods-panel">
+			<li>服务承诺</li>
+			<li>45天退换</li>
+			<li>假一赔三</li>
+			<li>三年维保</li>
+		</ul>
+	</div>
+</section>
+<section class="w details-wrap">
+	<div class="details-title">
+		<span>商品详情</span>
+	</div>
+	<section class="details-content">
+		<span>商品名称 ：{{goods_name}}&nbsp;&nbsp;</span>
+		<span>商品编号 ：{{goods_id}}&nbsp;&nbsp;</span>
+		<span>商品重量 : {{weight}} kg&nbsp;&nbsp;</span>
+		<span>商品材质 : {{mertial}}&nbsp;&nbsp;</span>
+		<span>商品库存 : {{store_count}}&nbsp;&nbsp;</span>
+		<span>商品销量 : {{sales_sum}}&nbsp;&nbsp;</span>
+		<span>商品赠送积分 : {{give_integral}}</span>
+		<div class="details-img">
+		{{#img}}
+			<img src={{url}} alt="">
+		{{/img}}
+		</div>
+	</section>
+	<input type="hidden" value={{goods_id}} class="goods_id">
+</section>
+{{/list}}

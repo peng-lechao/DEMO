@@ -1,0 +1,12 @@
+{{#list}}
+<div class="floor-item clearfix">
+	<p class="floor-title">{{index}}F{{name}}</p>
+	{{#item}}
+	<a href="./list-details.html?goods_id={{goods_id}}" >
+		<img src={{original_img}} alt="">
+		<p>{{goods_name}}</p>
+	</a>
+	{{/item}}
+</div>
+{{/list}}
+

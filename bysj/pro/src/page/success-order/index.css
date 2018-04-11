@@ -1,0 +1,48 @@
+.w.success-wrap {
+	margin: 30px auto;
+}
+
+.success-con {
+	margin: 30px 0;
+	width: 100%;
+	height: 150px;
+	border: 1px #cdcdcd solid;
+}
+
+.success-con .img-con {
+	float: left;
+	width: 160px;
+	height: 100%;
+	padding: 15px;
+	border-right: 1px #cdcdcd solid;
+	background-color: #dfdfdf;
+}
+
+.success-con .img-con img {
+	width: 100%;
+	height: 100%;
+}
+
+.success-details {
+	float: left;
+	margin-top: 25px;
+	padding-left: 20px;
+}
+
+.success-details .success-title {
+	color: #8EC31F;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.success-details p {
+	font-size: 15px;
+	line-height: 30px;
+}
+
+.success-details .order-id {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+

@@ -1,0 +1,139 @@
+.list-wrap {
+	width: 100%;
+	margin-top: 20px;
+}
+
+.sort-con li {
+	float: left;
+	position: relative;
+	margin: 10px 10px 10px 0;
+	padding: 5px;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	background-color: #fff;
+}
+
+.sort-con li i {
+	position: absolute;
+	top: 9px;
+	left: 32px;
+}
+
+.sort-con .active {
+	background-color: #8f0404;
+	border: 1px solid #8f0404;
+	color: #fff;
+}
+
+.p-list {
+	padding: 1px;
+}
+
+.p-item {
+	position: relative;
+	float: left;
+	width: 200px;
+	margin:10px 0 15px 0;
+	margin-right: 19px;
+	padding: 10px;
+	background-color: #fff;
+	transition: all 0.5s;
+}
+
+.p-item:nth-of-type(5n) {
+	margin-right: 0;
+}
+
+.p-item:hover {
+	box-shadow: 0px 0px 5px #333;
+	color: #8f0404;
+}
+
+.p-item .p-img-con,
+.p-item .p-img-con .p-img{
+	width: 180px;
+	height: 200px;
+	margin: 0 auto;
+}
+
+.p-item .p-price-con .p-price {
+	display: inline-block;
+	margin: 5px 0 0 0;
+	color: #ec5051;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.p-item .p-price-con .p-sales {
+	display: inline-block;
+	float: right;
+	line-height: 35px;
+	color: #9fa0a0;
+}
+
+.p-item .p-name-con {
+	height: 30px;
+	margin-top: 7px;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.p-item .p-name-con .p-name {
+	font-size: 14px;
+	color: #666;
+}
+
+.p-item .p-name-con .p-name:hover {
+	color: #8f0404;
+}
+
+.p-footer .add-cart {
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #ddd;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.p-footer .add-cart:hover {
+	border: 1px solid #ec5151;
+}
+
+.p-footer .add-cart i {
+	font-size: 17px;
+	color: #ec5151;
+}
+
+.p-footer .add-cart span {
+	padding-left: 2px;
+	font-size: 14px;
+	color: #ec5151; 
+}
+
+.p-footer .add-cart span:hover {
+	color: #ec5151;
+}
+
+.p-footer .shop-info {
+	padding-top: 10px
+}
+
+.p-footer .shop-info i{
+	color: #F68A00;
+}
+
+.p-footer .shop-info span {
+	color: #3a78bf;
+}
+
+.p-footer .shop-info span:hover {
+	color: #3a78bf;
+}
+
+.checked {
+	color: #fff;
+}
+

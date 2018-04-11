@@ -1,0 +1,13 @@
+{{#list}}
+
+<ul class="list-content">
+	<li class="list-info">
+		<img src={{original_img}} alt="">
+		<span>{{goods_name}}</span>
+	</li>
+	<li class="list-price">{{shop_price}}</li>
+	<li class="list-count">{{count}}</li>
+	<li class="list-sum">{{sum_price}}</li>
+</ul>
+
+{{/list}}

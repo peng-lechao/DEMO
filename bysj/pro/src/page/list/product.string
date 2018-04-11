@@ -1,0 +1,30 @@
+{{#list}} 
+<li class="p-item">
+    <a class="link" href="./list-details.html?goods_id={{goods_id}}" target="_blank" title={{goods_name}}>
+        <div class="p-img-con">
+            <img class="p-img" src="{{original_img}}" alt="{{goods_name}}" />
+        </div>
+        <div class="p-price-con">
+            <span class="p-price">￥{{shop_price}}</span>
+            <span class="p-sales">销量 : {{sales_sum}}</span>
+        </div>
+        <div class="p-name-con">
+            <span class="p-name">{{goods_name}}</span>
+        </div>
+    </a>
+        <div class="p-footer">
+            <div class="shop-info fl">
+                <i class="fa fa-shopping-basket"></i>
+                <span>红木汇</span>
+            </div>
+            <div class="add-cart fr" data-id={{goods_id}}>
+                <i class="fa fa-cart-plus"></i>
+                <span>购买</span>
+            </div>
+        </div>
+ 
+</li>
+{{/list}}
+{{^list}}
+    <div class="err-tip">抱歉，没有相关商品！</div>
+{{/list}}
